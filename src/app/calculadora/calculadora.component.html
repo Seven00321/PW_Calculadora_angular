@@ -1,0 +1,42 @@
+<div class="container">
+
+    <h2>Aplicación de Calculadora</h2>
+
+    <form>
+        <div class="form-group">
+            <label for="operando_a">Operando A:</label>
+            <input 
+                type="number" 
+                id="operando_a" 
+                class="form-control" 
+                [(ngModel)]="operadorA"
+                name="operadorA"
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="operando_b">Operando B:</label>
+            <input 
+                type="number" 
+                id="operando_b" 
+                class="form-control" 
+                [(ngModel)]="operadorB"
+                name="operadorB"
+            >
+        </div>
+
+        <div class="col">
+            <button type="submit" class="btn btn-primary" (click)="sumar()">Sumar</button>
+    
+            <button type="submit" class="btn btn-secondary" (click)="restar()">Restar</button>
+        </div>
+
+    </form>
+
+    
+
+
+    <label for="">Resultado</label>
+    <input type="text" value={{resultado}} disabled>
+
+</div>
