@@ -6,15 +6,11 @@ import { Component } from '@angular/core';
     styleUrls: ['./calculadora.component.css'],
 })
 export class CalculadoraComponent {
-    operadorA = 0;
-    operadorB = 0;
-    resultado = 0;
+   
+    resultado:number = 0;
 
-    sumar(){
-        this.resultado = this.operadorA + this.operadorB
+    nuevoResultado(){
+        
     }
 
-    restar(){
-        this.resultado = this.operadorA - this.operadorB
-    }
 }

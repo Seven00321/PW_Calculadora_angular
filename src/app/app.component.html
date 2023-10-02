@@ -11,8 +11,32 @@
     <div class="titulo">
         <h1>{{title}}</h1>
     </div>
+
+    <div class="container">
+
+        <h2>Aplicación de la Calculadora</h2>
+
+        <!-- Formulario -->
+        <app-formulario 
+            (resultado)="nuevoResultado($event)">
+        </app-formulario>
+
+        <!-- Resultado  -->
+
+        <app-resultado
+            [resultado] = "resultado">
+            
+        </app-resultado>
+        
+    </div>
+
     
-    <app-calculadora></app-calculadora>
+
+
+
+
+    <!--<app-calculadora></app-calculadora>-->
+
 
 </body>
 
